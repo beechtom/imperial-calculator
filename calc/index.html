@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="test"></div>
+        <div id="calc-container">
+
+            <!-- BEGIN CALCULATOR -->
+            <div id="calculator">
+                <div id="calc-display">
+                    <span id="unit-second"></span>
+                    <span id="unit-first">0</span>
+                </div>
+
+                <div id="calc-keys">
+                    <button class="key-unit" data-action="ft">FT</button>
+                    <button class="key-unit" data-action="in">IN</button>
+                    <button class="key-unit" data-action="fr">NUM</button>
+                    <button class="key-oper" data-action="div">&divide;</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="key-oper" data-action="mul">&times;</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="key-oper" data-action="sub">&minus;</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button class="key-oper" data-action="add">&plus;</button>
+                    <button>0</button>
+                    <button data-action="dec">.</button>       
+                    <button data-action="clr">CE</button>
+                    <button data-action="eq">=</button>
+                </div>
+            </div>
+            <!-- END CALCULATOR -->
+
+            <!-- BEGIN HISTORY -->
+            <div id="hist-container">
+                <ul id="hist-list"></ul>
+                <span id="hist-text">End of History</span>
+            </div>
+            <!-- END HISTORY -->
+
+        </div>
+
+        <script src="lib/fraction.js"></script>
+        <script src="calc.js"></script>
+    </body>
+</html>

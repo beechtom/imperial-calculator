@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', 'Segoe UI', 'San Francisco', 'Ubuntu', 'Roboto';
+    font-size: 13px;
+    cursor: default;
+    width: 175px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    padding: 0;
+}
+
+li {
+    padding: 0.25rem 1rem;
+}
+
+li img {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+li:hover {
+    background: rgb(240, 240, 240);
+}

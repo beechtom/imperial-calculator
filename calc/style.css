@@ -1,0 +1,147 @@
+html, body {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', 'San Francisco', 'Segoe UI', 'Roboto', 'Ubuntu';
+    font-size: 15px;
+}
+
+
+/* CALCULATOR */
+
+#calc-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    min-height: 0;
+}
+
+#calc-display {
+    padding: 2rem;
+    text-align: right;
+    font-size: 2rem;
+}
+
+#hist-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+}
+
+#calc-keys {
+    flex: 0 1 auto;
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#calculator {
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+
+/* CALCULATOR UNITS */
+
+#unit-second.imp::after {
+    display: inline-block;
+    content: "' -";
+}
+#unit-first.imp::after {
+    display: inline-block;
+    content: "\"";
+}
+
+
+/* CALCULATOR KEYS */
+
+button {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+    padding: 1.2rem 0;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+button:hover,
+button:active,
+button:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+button.key-oper {
+    background: #333;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+button.key-unit {
+    background: #DDD;
+}
+
+button[data-action=eq] {
+    background: #00B4DB;
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.key-oper.is-pressed {
+    background: #666;
+}
+
+
+/* HISTORY */
+
+#hist-text {
+    display: block;
+    padding: 1rem 0;
+    margin-top: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    background: #FAFAFA;
+    border-top: 1px solid #DDD;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 1.25rem;
+    border-top: 1px solid #DDD;
+}
+
+li:first-child {
+    border: none;
+}
+
+li span {
+    display: block;
+    color: #AAA;
+}
+
+li span:last-child {
+    text-align: right;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
