@@ -1,5 +1,5 @@
 
-### Imperial Calculator
+# Imperial Calculator
 An easy-to-use foot-inch calculator for Firefox.
 
 
